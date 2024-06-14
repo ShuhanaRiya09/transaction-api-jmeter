@@ -1,4 +1,4 @@
-# Random-User-API-Performance-Test
+# Random-Starwars-API-Performance-Test
 
 This project involves performing a load test on the URL https://swapi.dev/api/people/ to determine the actual transactions per second (TPS) for 120,000 users over 12 hours. The project also identifies the system's bottleneck/stress test point and capacity TPS. The results are documented in Excel sheets and visualized through screenshots.The Star Wars API (SWAPI) is a RESTful web service that provides access to various data related to the Star Wars universe. The API is designed to be a comprehensive and easy-to-use resource for developers who want to access information about characters, films, species, starships, vehicles, and planets from the Star Wars franchise.
 
