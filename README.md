@@ -1,81 +1,44 @@
-# JMeter Performance Testing Project
+# Random-User-API-Performance-Test
 
-## Project Overview
-This project involves creating a JMX file for Apache JMeter to automate a series of positive test cases based on the following scenario:
+This project involves performing a load test on the URL `https://random-data-api.com/api/v2/users` to determine the actual transactions per second (TPS) for 120,000 users over 12 hours. The project also identifies the system's bottleneck/stress test point and capacity TPS. The results are documented in Excel sheets and visualized through screenshots.
 
-1. Admin creates an agent and a customer.
-2. Deposit 2000 TK to the agent from the system account.
-3. Deposit 1000 TK to the customer from the agent account.
-4. Check balance from the customer account.
-5. Withdraw 500 TK from the customer account.
-6. Payment of 200 TK from the customer account to a merchant.
+## Test Scenario
 
-The objective is to simulate these actions and measure the performance of the system under test.
+### Objectives
 
-## Prerequisites
-- Java (JDK 8 or above)
-- Apache JMeter (version 5.0 or above)
+1. **Determine Actual TPS:**
+   - Verify if the system can handle the expected TPS for 120,000 users over 12 hours.
+   - Calculate the actual TPS.
 
-## Installation
-1. **Install Java**: Ensure that you have JDK 8 or above installed on your system. You can download it from the [official Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html).
-2. **Download JMeter**: Download the latest version of Apache JMeter from the [official JMeter website](https://jmeter.apache.org/download_jmeter.cgi).
-3. **Extract JMeter**: Extract the downloaded JMeter archive to a desired location on your computer.
+2. **Identify Bottleneck/Stress Test Point:**
+   - Find the point at which the system starts showing a 1% error rate.
 
-## Creating the JMX File
-Follow the steps below to create the JMX file for the given scenario:
+3. **Determine Capacity TPS:**
+   - Identify the maximum TPS the system can handle without errors.
 
-1. **Open JMeter**: Navigate to the `bin` directory of your JMeter installation and run `jmeter.bat` (Windows) or `jmeter.sh` (Mac/Linux).
+## Requirements
 
-2. **Create a Test Plan**:
-   - Open JMeter and create a new test plan.
-   - Right-click on the Test Plan and add a Thread Group: `Add > Threads (Users) > Thread Group`.
-   - Set the number of threads (users), ramp-up period, and loop count as needed.
+- Apache JMeter installed on your machine
+- Basic understanding of JMeter and performance testing
+- A working instance of the Random User API
 
-3. **Add HTTP Request Defaults**:
-   - Right-click on the Thread Group: `Add > Config Element > HTTP Request Defaults`.
-   - Configure the server name or IP, and port number of the system under test.
+## Setup Instructions
 
-4. **Add HTTP Requests**:
-   - **Create Agent and Customer**: Add an HTTP Request sampler for the admin to create an agent and a customer.
-     - Method: `POST`
-     - Path: `/createUser`
-     - Parameters: `{ "role": "agent" }` and `{ "role": "customer" }`
-   - **Deposit to Agent**: Add an HTTP Request sampler to deposit 2000 TK to the agent from the system account.
-     - Method: `POST`
-     - Path: `/transacton/deposit`
-     - Parameters: `{ "fromAc": "SYSTEM", "toAc": "agent", "amount": 2000 }`
-   - **Deposit to Customer**: Add an HTTP Request sampler to deposit 1000 TK to the customer from the agent account.
-     - Method: `POST`
-     - Path: `/transacton/deposit`
-     - Parameters: `{ "fromAc": "agent", "toAc": "customer", "amount": 1000 }`
-   - **Check Balance**: Add an HTTP Request sampler to check the balance from the customer account.
-     - Method: `GET`
-     - Path: `/transacton/balance`
-     - Parameters: `{ "ac": "customer" }`
-   - **Withdraw**: Add an HTTP Request sampler to withdraw 500 TK from the customer account.
-     - Method: `POST`
-     - Path: `/transacton/withdraw`
-     - Parameters: `{ "fromAc": "customer", "amount": 500 }`
-   - **Payment**: Add an HTTP Request sampler for the payment of 200 TK from the customer account to a merchant.
-     - Method: `POST`
-     - Path: `/transacton/payment`
-     - Parameters: `{ "fromAc": "customer", "toAc": "merchant", "amount": 200 }`
+### Apache JMeter Installation
 
-5. **Add Listeners**:
-   - Right-click on the Thread Group: `Add > Listener > View Results Tree`.
-   - Right-click on the Thread Group: `Add > Listener > Summary Report`.
+1. Download and install Apache JMeter from the [official website](https://jmeter.apache.org/download_jmeter.cgi).
 
-6. **Save the Test Plan**: Save the test plan as `Dmoney.jmx`.
+### Repository Structure
 
-## Running the Test Plan
-1. Open JMeter.
-2. Load the `Dmoney.jmx` file.
-3. Run the test by clicking on the green start button.
-4. Monitor the test results in the listeners.
+- **README.md:** This file.
+- **test-plan.jmx:** JMeter test plan file.
+- **resources:** Folder containing Excel files with test reports.
+- **screenshots:** Folder containing screenshots of the reports.
 
-## Jmeter HTML Report:
-![image](https://github.com/ShuhanaRiya09/demo-transaction-api-jmeter/assets/108625095/887d76d4-11af-4b36-a7cc-4aac33790223)
+### Cloning the Repository
 
+1. Clone or download the project repository:
 
-## Conclusion
-This project provides a structured way to automate and measure the performance of a system based on a specified scenario using Apache JMeter. Follow the steps outlined above to create and execute your JMX test plan.
+```bash
+git clone https://github.com/your-username/Random-User-API-Performance-Test.git.```
+
