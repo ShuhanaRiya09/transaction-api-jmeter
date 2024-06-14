@@ -65,11 +65,11 @@ Follow the steps below to create the JMX file for the given scenario:
    - Right-click on the Thread Group: `Add > Listener > View Results Tree`.
    - Right-click on the Thread Group: `Add > Listener > Summary Report`.
 
-6. **Save the Test Plan**: Save the test plan as `scenario.jmx`.
+6. **Save the Test Plan**: Save the test plan as `Dmoney.jmx`.
 
 ## Running the Test Plan
 1. Open JMeter.
-2. Load the `scenario.jmx` file.
+2. Load the `Dmoney.jmx` file.
 3. Run the test by clicking on the green start button.
 4. Monitor the test results in the listeners.
 
