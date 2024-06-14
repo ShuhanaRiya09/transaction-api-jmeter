@@ -73,5 +73,9 @@ Follow the steps below to create the JMX file for the given scenario:
 3. Run the test by clicking on the green start button.
 4. Monitor the test results in the listeners.
 
+## Jmeter HTML Report:
+![image](https://github.com/ShuhanaRiya09/demo-transaction-api-jmeter/assets/108625095/887d76d4-11af-4b36-a7cc-4aac33790223)
+
+
 ## Conclusion
 This project provides a structured way to automate and measure the performance of a system based on a specified scenario using Apache JMeter. Follow the steps outlined above to create and execute your JMX test plan.
