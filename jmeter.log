@@ -1,0 +1,31 @@
+2024-06-13 23:48:50,832 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2024-06-13 23:48:50,880 INFO o.a.j.JMeter: Loading user properties from: E:\apache-jmeter-5.6.3\bin\user.properties
+2024-06-13 23:48:50,880 INFO o.a.j.JMeter: Loading system properties from: E:\apache-jmeter-5.6.3\bin\system.properties
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: Version 5.6.3
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: java.version=17.0.10
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: os.name=Windows 11
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: os.arch=amd64
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: os.version=10.0
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: file.encoding=Cp1252
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: java.awt.headless=true
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: Max memory     =1073741824
+2024-06-13 23:48:50,896 INFO o.a.j.JMeter: Available Processors =4
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: Default Locale=English (EN)
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: JMeterHome=E:\apache-jmeter-5.6.3
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: user.dir  =E:\apache-jmeter-5.6.3\bin\b11
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: PWD       =E:\apache-jmeter-5.6.3\bin\b11
+2024-06-13 23:48:50,912 INFO o.a.j.JMeter: IP: 192.168.1.105 Name: DESKTOP-0QIN77L FullName: DESKTOP-0QIN77L.W4
+2024-06-13 23:48:50,928 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Cannot write to 'E:\apache-jmeter-5.6.3\bin\b11\Reports' as folder is not empty
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:664) ~[jorphan.jar:5.6.3]
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:620) ~[jorphan.jar:5.6.3]
+	at org.apache.jmeter.JMeter.extractAndSetReportOutputFolder(JMeter.java:542) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:492) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]

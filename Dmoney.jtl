@@ -1,0 +1,15 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1717870898125,2975,Admin login,200,OK,Thread Group 1-1,text,true,,621,320,1,1,https://dmoney.roadtocareer.net/user/login,2964,0,2876
+1717870901176,77,Create Agent,201,Created,Thread Group 1-1,text,true,,614,625,1,1,https://dmoney.roadtocareer.net/user/create,77,0,0
+1717870901256,53,Create Customer,201,Created,Thread Group 1-1,text,true,,620,631,1,1,https://dmoney.roadtocareer.net/user/create,53,0,0
+1717870901311,46,Create Merchant,201,Created,Thread Group 1-1,text,true,,620,631,1,1,https://dmoney.roadtocareer.net/user/create,45,0,0
+1717870901359,39,System Login,200,OK,Thread Group 1-1,text,true,,617,508,1,1,https://dmoney.roadtocareer.net/user/login,39,0,0
+1717870901400,229,Deposit2Agent,201,Created,Thread Group 1-1,text,true,,444,536,1,1,https://dmoney.roadtocareer.net/transaction/deposit,229,0,0
+1717870901630,42,Agent Login,200,OK,Thread Group 1-1,text,true,,614,506,1,1,https://dmoney.roadtocareer.net/user/login,42,0,0
+1717870901675,94,Deposit2Customer,201,Created,Thread Group 1-1,text,true,,438,541,1,1,http://dmoney.roadtocareer.net/transaction/deposit,94,0,30
+1717870901770,59,Customer Login,200,OK,Thread Group 1-1,text,true,,621,509,1,1,https://dmoney.roadtocareer.net/user/login,59,0,0
+1717870901831,27,Check Customer Balance,200,OK,Thread Group 1-1,text,true,,377,441,1,1,https://dmoney.roadtocareer.net/transaction/balance/01643740875,27,0,0
+1717870901860,46,Withdraw from customer,201,Created,Thread Group 1-1,text,true,,429,541,1,1,https://dmoney.roadtocareer.net/transaction/withdraw,46,0,0
+1717870901908,48,Search Merchant,200,OK,Thread Group 1-1,text,true,,633,445,1,1,https://dmoney.roadtocareer.net/user/search/phonenumber/01773740875,47,0,0
+1717870901957,66,Payment2merchant,201,Created,Thread Group 1-1,text,true,,428,540,1,1,https://dmoney.roadtocareer.net/transaction/payment,66,0,0
+1717870902036,6,Debug Sampler,200,OK,Thread Group 1-1,text,true,,1428,0,1,1,null,0,0,0
