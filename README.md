@@ -40,10 +40,11 @@ You can download the Excel files from the following links:
 
 ## Load Test:
 
-![Load](https://github.com/ShuhanaRiya09/Random-Covid-19-API-Performance-Test/assets/108625095/2e171cf0-e342-4fcc-bda0-6c8d3fa314c2)
+![lll](https://github.com/ShuhanaRiya09/transaction-api-jmeter/assets/108625095/ff1ba465-6688-47ca-8641-d0e399033496)
+
 ## Stress Test:
 
-![s](https://github.com/ShuhanaRiya09/Random-Covid-19-API-Performance-Test/assets/108625095/c5903eb9-7c26-42a1-baf4-d2cb342af1db)
+![sss](https://github.com/ShuhanaRiya09/transaction-api-jmeter/assets/108625095/fd0ef2c9-584e-47ad-aafa-91d60c18a26b)
 
 
 
