@@ -1,6 +1,8 @@
 # Random-User-API-Performance-Test
 
-This project involves performing a load test on the URL `https://random-data-api.com/api/v2/users` to determine the actual transactions per second (TPS) for 120,000 users over 12 hours. The project also identifies the system's bottleneck/stress test point and capacity TPS. The results are documented in Excel sheets and visualized through screenshots.
+This project involves performing a load test on the URL https://swapi.dev/api/people/ to determine the actual transactions per second (TPS) for 120,000 users over 12 hours. The project also identifies the system's bottleneck/stress test point and capacity TPS. The results are documented in Excel sheets and visualized through screenshots.The Star Wars API (SWAPI) is a RESTful web service that provides access to various data related to the Star Wars universe. The API is designed to be a comprehensive and easy-to-use resource for developers who want to access information about characters, films, species, starships, vehicles, and planets from the Star Wars franchise.
+
+Here is a breakdown of what the SWAPI provides, specifically for the endpoint https://swapi.dev/api/people/:
 
 ## Test Scenario
 
@@ -28,12 +30,6 @@ This project involves performing a load test on the URL `https://random-data-api
 
 1. Download and install Apache JMeter from the [official website](https://jmeter.apache.org/download_jmeter.cgi).
 
-### Repository Structure
-
-- **README.md:** This file.
-- **test-plan.jmx:** JMeter test plan file.
-- **resources:** Folder containing Excel files with test reports.
-- **screenshots:** Folder containing screenshots of the reports.
 
 ### Cloning the Repository
 
@@ -42,3 +38,37 @@ This project involves performing a load test on the URL `https://random-data-api
 ```bash
 git clone https://github.com/your-username/Random-User-API-Performance-Test.git.```
 
+### Resources:
+
+## Load Test and Stress Test reports in Excel format.
+You can download the Excel files from the following links:
+- [Load&stresstest.xlsx](https://docs.google.com/spreadsheets/d/1NQoul8f9fX15vutBTHN46yBVwDtDyF7A/edit?usp=sharing&ouid=106900521374584856661&rtpof=true&sd=true)
+
+## Screetshot of Excel sheets:
+
+## Load Test:
+
+![Load](https://github.com/ShuhanaRiya09/Random-Covid-19-API-Performance-Test/assets/108625095/2e171cf0-e342-4fcc-bda0-6c8d3fa314c2)
+## Stress Test:
+
+![s](https://github.com/ShuhanaRiya09/Random-Covid-19-API-Performance-Test/assets/108625095/c5903eb9-7c26-42a1-baf4-d2cb342af1db)
+
+
+
+## Outputs:
+
+## Jmeter HTML Report:
+
+![1report](https://github.com/ShuhanaRiya09/Covid-19-API-Performance-Test/assets/108625095/ea72a44c-fd7f-4fb4-ab9a-4098e56babbb)
+
+
+## Bottleneck and Capacity TPS :
+
+## Bottleneck Point -
+The system starts to show a 0.67% error rate at a TPS of 9.15
+
+## Capacity TPS -
+The maximum sustainable TPS the system can handle without errors is 7.52
+
+## Conclusion :
+The performance testing of the Random User API demonstrated its ability to handle the expected load of 120,000 users over 12 hours. The Load Test confirmed the API meets the required TPS, while the Stress Test identified the bottleneck at which a 1% error rate occurs. These insights provide a foundation for future optimizations and scaling efforts, ensuring the API remains robust under increased loads.
