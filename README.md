@@ -27,16 +27,8 @@ Here is a breakdown of what the SWAPI provides, specifically for the endpoint ht
 ## Setup Instructions
 
 ### Apache JMeter Installation
-
 1. Download and install Apache JMeter from the [official website](https://jmeter.apache.org/download_jmeter.cgi).
 
-
-### Cloning the Repository
-
-1. Clone or download the project repository:
-
-```bash
-git clone https://github.com/your-username/Random-User-API-Performance-Test.git.```
 
 ### Resources:
 
@@ -59,16 +51,9 @@ You can download the Excel files from the following links:
 
 ## Jmeter HTML Report:
 
-![1report](https://github.com/ShuhanaRiya09/Covid-19-API-Performance-Test/assets/108625095/ea72a44c-fd7f-4fb4-ab9a-4098e56babbb)
+![tttt](https://github.com/ShuhanaRiya09/transaction-api-jmeter/assets/108625095/45f2055c-46ef-42ef-b956-0d8e55d7adf9)
 
 
-## Bottleneck and Capacity TPS :
-
-## Bottleneck Point -
-The system starts to show a 0.67% error rate at a TPS of 9.15
-
-## Capacity TPS -
-The maximum sustainable TPS the system can handle without errors is 7.52
 
 ## Conclusion :
 The performance testing of the Random User API demonstrated its ability to handle the expected load of 120,000 users over 12 hours. The Load Test confirmed the API meets the required TPS, while the Stress Test identified the bottleneck at which a 1% error rate occurs. These insights provide a foundation for future optimizations and scaling efforts, ensuring the API remains robust under increased loads.
